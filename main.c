@@ -62,13 +62,22 @@ int main(int argc, char *argv[]) {
     // }
 
 
-    int compteur = 0;
+    // int compteur = 0;
+    //
+    // do
+    // {
+    //     printf("La variable compteur vaut %d\n", compteur);
+    //     compteur++;
+    // } while (compteur < 10);
 
-    do
-    {
-        printf("La variable compteur vaut %d\n", compteur);
-        compteur++;
-    } while (compteur < 10);
+    int counter;
+
+    for(counter = 0; counter < 10; counter++) {
+        printf("%d\n", counter);
+    }
+    printf("%d\n", counter);
+
+
 
 
     return 0;
