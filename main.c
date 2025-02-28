@@ -53,14 +53,22 @@ int main(int argc, char *argv[]) {
     // }
 
 
-    int nombreEntre = 0;
+    // int nombreEntre = 0;
+    //
+    // while (nombreEntre != 47)
+    // {
+    //     printf("Tapez le nombre 47 : ");
+    //     scanf("%d", &nombreEntre);
+    // }
 
-    while (nombreEntre != 47)
+
+    int compteur = 0;
+
+    do
     {
-        printf("Tapez le nombre 47 : ");
-        scanf("%d", &nombreEntre);
-    }
-
+        printf("La variable compteur vaut %d\n", compteur);
+        compteur++;
+    } while (compteur < 10);
 
 
     return 0;
