@@ -28,30 +28,38 @@ int main(int argc, char *argv[]) {
 
     //If Else Switch
 
-    int menuNumber = 0;
-    printf("=== Menu ===");
-    printf("Enter a number to choose a meal.\n 1. Royal Cheese \n 2. Mc Deluxe \n 3. Mc Bacon \n 4. Big Mac \n Votre choix ? \n");
-    scanf("%d", &menuNumber);
-    printf("")
+    // int menuNumber = 0;
+    // printf("=== Menu ===");
+    // printf("Enter a number to choose a meal.\n 1. Royal Cheese \n 2. Mc Deluxe \n 3. Mc Bacon \n 4. Big Mac \n Votre choix ? \n");
+    // scanf("%d", &menuNumber);
+    // printf("")
+    //
+    // switch (menuNumber) {
+    //     case 1:
+    //         printf("Vous avez choisi le Royal Cheese");
+    //     break;
+    //     case 2:
+    //         printf("Vous avez choisi le Mc Deluxe");
+    //     break;
+    //     case 3:
+    //         printf("Vous avez choisi le Mc Bacon");
+    //     break;
+    //     case 4:
+    //         printf("Vous avez choisi le Big Mac");
+    //     break;
+    //     default:
+    //         printf("Enter a valid menu number");
+    //     break;
+    // }
 
-    switch (menuNumber) {
-        case 1:
-            printf("Vous avez choisi le Royal Cheese");
-        break;
-        case 2:
-            printf("Vous avez choisi le Mc Deluxe");
-        break;
-        case 3:
-            printf("Vous avez choisi le Mc Bacon");
-        break;
-        case 4:
-            printf("Vous avez choisi le Big Mac");
-        break;
-        default:
-            printf("Enter a valid menu number");
-        break;
+
+    int nombreEntre = 0;
+
+    while (nombreEntre != 47)
+    {
+        printf("Tapez le nombre 47 : ");
+        scanf("%d", &nombreEntre);
     }
-
 
 
 
