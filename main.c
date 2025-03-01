@@ -70,12 +70,13 @@ int main(int argc, char *argv[]) {
     //     compteur++;
     // } while (compteur < 10);
 
-    int counter;
-
-    for(counter = 0; counter < 10; counter++) {
-        printf("%d\n", counter);
-    }
-    printf("%d\n", counter);
+    // int counter;
+    //
+    // for(counter = 0; counter < 10; counter++) {
+    //     printf("%d\n", counter);
+    // }
+    // printf("%d\n", counter);
+    //
 
 
 
