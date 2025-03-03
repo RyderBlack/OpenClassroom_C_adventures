@@ -21,8 +21,10 @@ int main(int argc, char *argv[])
 
 
     int number = 5;
-    triplePointer(&number);
-    printf("number is: %d\n", number);
+    int *pointerBis = &number;
+    triplePointer(pointerBis);
+
+    printf("number is: %d\n", *pointerBis);
 
     return 0;
 }
