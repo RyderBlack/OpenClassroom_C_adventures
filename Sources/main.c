@@ -3,24 +3,25 @@
 
 
 // Prototype:
-
+int showArray(int *array, int size_array);
 
 int main(int argc, char *argv[])
 {
 
-    int myArray[4];
+    int myArray[4] = { 11,22,33,44}, i = 0;
 
-    myArray[0] = 1;
-    myArray[1] = 2;
-    myArray[2] = 3;
-    myArray[3] = 4;
+    showArray()
 
-    printf("myArray[1] = %d\n", myArray[1]);
-    printf("myArray[1] = %d\n", *(myArray+1));
     return 0;
 }
 
+int showArray(int *array, int size_array) {
+    int i = 0;
 
+    for (i = 0; i < size_array; i++) {
+        printf("array[%d] = %d\n", i, array[i]);
+    }
+}
 
 
 
