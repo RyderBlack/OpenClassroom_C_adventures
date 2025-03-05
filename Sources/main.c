@@ -1,49 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 // Prototype:
-void showArray(int array[], int size_array);
-int arrSum(int array[], int size_arr);
-double arrAvg(int array[], int size_arr);
+char* strcpy(char* copyOfChain, const char* chainToCopy);
 
 int main(int argc, char *argv[])
 {
+    // char str[100];
+    char chain[] = "hello world", copied[100] = {0};;
+    int len_chain = 0;
+    len_chain = strlen(chain);
 
-    int myArray[4] = { 11,22,33,44};
+    printf("The chain %s has the following length %d\n", chain, len_chain);
 
-    // showArray(myArray, 4);
-    arrSum(myArray, 4);
-    arrAvg(myArray, 4);
+    strcpy(copied, chain);
+    printf("Chain : %s\n", chain);
+    printf("Copied chain : %s\n", copied);
     return 0;
 }
 
-void showArray(int array[], int size_array) {
-    int i = 0;
 
-    for (i = 0; i < size_array; i++) {
-        printf("array[%d] = %d\n", i, array[i]);
-    }
-}
 
-int arrSum(int array[], int size_array) {
-    int sum = 0;
-    for (int i = 0; i < size_array; i++) {
-        sum += array[i];
-    }
-    printf("sum = %d\n", sum);
-    return sum;
-}
 
-double arrAvg(int array[], int size_array) {
-    int sum = 0;
-    for (int i = 0; i < size_array; i++) {
-        sum += array[i];
-    }
-    double formatted_output = (double)sum / (double)size_array;
-    printf("average = %f\n", formatted_output);
-    return formatted_output;
-}
+
 
 
 
