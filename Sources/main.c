@@ -26,6 +26,12 @@ int main(int argc, char *argv[])
         printf("The chain is not equal to the copied chain\n");
     }
 
+
+    char chain_age[100];
+    int age = 21;
+
+    sprintf(chain_age, "You are %d years old", age);
+    printf("%s\n", chain_age);
     return 0;
 }
 
