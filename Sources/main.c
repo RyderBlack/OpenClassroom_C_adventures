@@ -18,6 +18,14 @@ int main(int argc, char *argv[])
     strcpy(copied, chain);
     printf("Chain : %s\n", chain);
     printf("Copied chain : %s\n", copied);
+
+
+    if(strcmp(chain, copied) == 0) {
+       printf("The chain is equal to the copied chain\n");
+    } else {
+        printf("The chain is not equal to the copied chain\n");
+    }
+
     return 0;
 }
 
