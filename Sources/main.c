@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define SIZE 100
+#define HELLO_WORLD() printf("Hello World\n");
 
 // Prototype:
 char* strcpy(char* copyOfChain, const char* chainToCopy);
@@ -35,6 +36,8 @@ int main(int argc, char *argv[])
     int sizing = SIZE;
     printf("The size is %d\n", sizing);
     printf("This file has been compiled %s at %s\n", __DATE__, __TIME__);
+
+    HELLO_WORLD();
 
     return 0;
 }
