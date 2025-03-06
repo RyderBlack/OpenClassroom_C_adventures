@@ -3,6 +3,8 @@
 #include <string.h>
 #define SIZE 100
 #define HELLO_WORLD() printf("Hello World\n");
+#define MAJORITY(age) if (age >= 18)\
+                        printf("You are an adult!\n");
 
 // Prototype:
 char* strcpy(char* copyOfChain, const char* chainToCopy);
@@ -38,6 +40,7 @@ int main(int argc, char *argv[])
     printf("This file has been compiled %s at %s\n", __DATE__, __TIME__);
 
     HELLO_WORLD();
+    MAJORITY(21);
 
     return 0;
 }
