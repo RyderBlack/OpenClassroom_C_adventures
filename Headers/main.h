@@ -21,6 +21,12 @@ struct Coordinates {
     int y;
 };
 
+// Enums :
+typedef enum Volume Volume;
+enum Volume {
+    MUTE = 0, LOW = 10, MIDDLE = 50, HIGH = 100
+};
+
 // Prototype:
 void initializeCoordinates(Coordinates* point);
 #endif //MAIN_H

@@ -23,15 +23,18 @@ int main(int argc, char *argv[])
     // printf("What is your age?\n");
     // scanf("%d", &person01.age);
     // printf("Your name is %s %s and your age is %d\n", person01.name, person01.surname, person01.age);
-    //
 
 
 
-    Coordinates monPoint;
-    initializeCoordinates(&monPoint);
 
+    // Coordinates monPoint;
+    // initializeCoordinates(&monPoint);
 
+    Volume music = HIGH;
 
+    if ( music == HIGH ) {
+        printf("Turn it down !\n");
+    }
     return 0;
 }
 
