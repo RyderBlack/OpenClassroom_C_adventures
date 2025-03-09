@@ -30,11 +30,26 @@ int main(int argc, char *argv[])
     // Coordinates monPoint;
     // initializeCoordinates(&monPoint);
 
-    Volume music = HIGH;
+    // Volume music = HIGH;
+    //
+    // if ( music == HIGH ) {
+    //     printf("Turn it down !\n");
+    // }
 
-    if ( music == HIGH ) {
-        printf("Turn it down !\n");
+
+    FILE* file01 = NULL;
+
+    file01 = fopen("testingC.txt", "w+");
+
+    if (file01 != NULL) {
+        printf("File opened successfully\n");
+        fputs("Welcome to this new file!", file01);
+        fclose(file01);
     }
+    else {
+        printf("Error opening file\n");
+    }
+
     return 0;
 }
 
