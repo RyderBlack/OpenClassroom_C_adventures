@@ -38,12 +38,16 @@ int main(int argc, char *argv[])
 
 
     FILE* file01 = NULL;
+    int age = 0;
 
     file01 = fopen("testingC.txt", "w+");
 
     if (file01 != NULL) {
-        printf("File opened successfully\n");
-        fputs("Welcome to this new file!", file01);
+        printf("What is your age\n");
+        scanf("%d", &age);
+
+        fputs("Welcome to this new file!\n", file01);
+        fprintf(file01, "You are %d\n", age);
         fclose(file01);
     }
     else {
