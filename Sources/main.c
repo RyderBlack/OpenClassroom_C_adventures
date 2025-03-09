@@ -39,18 +39,27 @@ int main(int argc, char *argv[])
 
     FILE* file01 = NULL;
     int age = 0;
+    char new_chain[SIZE_MAXX] = "";
 
-    file01 = fopen("testingC.txt", "w+");
+    file01 = fopen("testingC.txt", "r+");
 
-    if (file01 != NULL) {
-        printf("What is your age\n");
-        scanf("%d", &age);
+    if (file01 != NULL)
+    {
+        // printf("What is your age\n");
+        // scanf("%d", &age);
 
-        fputs("Welcome to this new file!\n", file01);
-        fprintf(file01, "You are %d\n", age);
+        // fputs("Welcome to this new file!\n", file01);
+        // fprintf(file01, "You are %d\n", age);
+
+        while (fgets(new_chain, SIZE_MAXX, file01) != NULL)
+        {
+            printf("%s", new_chain);
+        }
+
         fclose(file01);
     }
-    else {
+    else
+    {
         printf("Error opening file\n");
     }
 
